@@ -1,4 +1,12 @@
 Site::Application.routes.draw do
+
+  root :to => 'pages#home'
+  
+  match '/home', :to => 'pages#home', :as => 'home'
+  match '/help', :to => 'pages#help', :as => 'help'
+  match '/about', :to => 'pages#about', :as => 'about'
+  match '/contact', :to => 'pages#contact', :as => 'contact' 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
