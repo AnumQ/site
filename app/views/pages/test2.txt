@@ -1,0 +1,4 @@
+<h1>Kontakt oss!</h1>
+
+<p>Har du spørsm+Íl? Hvorfor ikke sende oss email? </p>
+<p>Email: <a href='#'>sample@example.com</a> </p>

@@ -1,18 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <head>
-  <title>Site</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>Ladjna Imaullah Norway - Ahmadiyya Muslim Association</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css" />
+ <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to "HOME", home_path %>
-<%= link_to "ABOUT", about_path %>
-<%= link_to "CONTACT", contact_path %>
-<%= link_to "HELP", help_path %>
-
-<%= yield %>
-
+<div id="wrapper">
+	<div id="header">
+			<div id="logo">
+				<h1>Ladjna Imaillah Norway</h1>
+				<h2>Ahmadiyya Muslim Association</h2>
+			</div>
+			<div id="menu">
+			<ul>				
+				<li><%= link_to "HOME", home_path %></li>
+				<li><%= link_to "ABOUT", about_path %></li>
+				<li><%= link_to "CONTACT", contact_path %></li>
+				<li><%= link_to "HELP", help_path %></li>
+			</ul>
+			</div>
+		</div>
+	<div id="page">
+		<div id="content">
+			<p><%= image_tag( "img02.jpg", :size => "650x200", :alt => "") %></p>
+			
+			<%= yield %>
+		</div>
+		<div id="sidebar">
+			<div id="tbox1">
+				<h2>Monthly Tasks</h2>
+				<ul class="style2">
+					<li class="first">
+						<h3><a href="#">General Meeting</a></h3>
+						<p><a href="#">Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh.</a></p>
+					</li>
+					<li>
+						<h3><a href="#">KhidmateKhalq</a></h3>
+						<p><a href="#">Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh.</a></p>
+					</li>
+					<li>
+						<h3><a href="#">Tabligh</a></h3>
+						<p><a href="#">Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh.</a></p>
+					</li>
+					<li>
+						<h3><a href="#">Tarbiyyat</a></h3>
+						<p><a href="#">Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh.</a></p>
+					</li>
+				</ul>
+				<p><a href="#" class="button-style">Read More</a></p>
+			
+			</div>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright (c) 2013 Ladjna Imaillah Norway - Ahmadiyya Muslim Association All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>. </p>
+	</div>
+</div>
 </body>
 </html>
