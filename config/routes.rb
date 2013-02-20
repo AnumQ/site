@@ -3,6 +3,7 @@ Site::Application.routes.draw do
   root :to => 'pages#home'
   
   match '/home', :to => 'pages#home', :as => 'home'
+  match '/blog', :to => 'pages#blog', :as => 'blog'
   match '/help', :to => 'pages#help', :as => 'help'
   match '/about', :to => 'pages#about', :as => 'about'
   match '/contact', :to => 'pages#contact', :as => 'contact' 
